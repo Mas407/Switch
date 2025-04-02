@@ -1,0 +1,19 @@
+
+#include<iostream>
+using namespace std;
+int main(){
+    int opp;
+    cout<<"Enter the opption ";
+    cin>>opp;
+    switch (opp)
+    {
+    case 1:
+        cout<<"Hello Masroor Ali";
+        break;
+    
+    default:
+    cout<<"Invalid";
+        break;
+    }
+    return 0;
+} 
