@@ -1,0 +1,34 @@
+
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"Press 1 for sum of the number ::> "<<endl;
+    cout<<"Press 2 for Substract of the number ::> "<<endl;
+    cout<<"Press 3 for Division of the number ::> "<<endl;
+    int opp;
+    int a,b;
+    cout<<"Enter the opption ";
+    cin>>opp;
+    switch (opp)
+    {
+    case 1:
+        cout<<"Enter the number ::> ";
+        cin>>a>>b;
+        cout<<"Sum of the number is ::> "<<a+b;
+        break;
+        case 2:
+        cout<<"Enter the number ::> ";
+        cin>>a>>b;
+        cout<<"Substract of the number is ::> "<<a-b;
+        break;
+        case 3:
+        cout<<"Enter the number ::> ";
+        cin>>a>>b;
+        cout<<"Division of the number is ::> "<<a/b;
+        break;
+    default:
+    cout<<"Invalid";
+        break;
+    }
+    return 0;
+} 
