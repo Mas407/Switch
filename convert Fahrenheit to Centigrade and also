@@ -1,0 +1,28 @@
+
+#include<iostream>
+using namespace std;
+int main(){
+
+cout<<"Enter 1 to convert Fahrenheit to Centigrade "<<endl;
+cout<<"Enter 2 to convert Centigrade to Fahrenheit "<<endl;
+int opp;
+float t,t1,t2;
+cout<<"Enter the opption :: ";
+cin>>opp;
+switch(opp){
+case 1:cout<<"Enter the temperature ";
+cin>>t;
+t1=(t-32)*5.0/9.0;
+cout<<t1;
+break;
+case 2:cout<<"Enter the temperature ";
+cin>>t;
+t2=(9.0/5.0)*t+32;
+cout<<t2;
+break;
+default:
+cout<<"INVALID";
+break;
+
+}
+return 0;}
