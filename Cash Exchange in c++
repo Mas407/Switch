@@ -1,0 +1,77 @@
+#include<iostream>
+using namespace std;
+void ShowMenu(){
+cout<<"Press 1 to check Balance  ::"<<endl;
+	cout<<"Press 2 to Deposit amount :: "<<endl;
+			cout<<"Press 3 to Withdraw amount :: "<<endl;
+				cout<<"Press 4 to Exit the Machine :: "<<endl;
+}
+int main(){char M;
+	int  code,a,b;
+	ShowMenu();
+	float balance=100;
+ int n,opp,pasword;
+	 cout<<"Enter the Option :: >  ";
+cin>>opp;
+					switch(opp){
+	
+	while (M=='y' || M=='Y')	{
+				case 1:cout<<"Enter your code :: >";
+cin>>code;
+			if(code==123456789){
+cout<<"Your Balance is "<<balance;
+break;}
+						else if (code!=123456789){
+			cout<<"Invalid Password :: "<<endl;
+	cout<<"If you want to try again (Yes or No)  ::  > ";
+cin>>M;}
+}
+	cout<<endl;
+	break;
+while (M=='y' || M=='Y'){
+	case 2:
+     	cout<<"Enter your code :: >";
+cin>>code;
+	           if(code==123456789){
+					cout<<"Enter the Account Number :: > ";
+	cin>>a;
+		cout<<"Enter the amount you want to send :: ";
+cin>>b;
+	if(b<=balance)
+		cout<<"Money send Successfully :: ";
+	else 
+			cout<<"Your Balance is :: > "<<balance<<" Rupees";
+	break;}
+			else if (code!=123456789){
+	cout<<"Invalid Password :: "<<endl;
+				cout<<"If you want to try again (Yes or No)  ::  > ";
+cin>>M;}
+	}
+			cout<<endl;
+break;
+			while (M=='y' || M=='Y'){
+						case 3: cout<<"Enter your code :: >";
+	cin>>code;
+			if(code==123456789){
+cout<<"Enter the Amount you want to Withdraw ";
+cin>>b;
+			if(b<=balance){
+cout<<"Money Recived  ::>  "<<b<<endl;
+	cout<<"Your Net Balance is "<<balance-b<<endl;
+}else 
+	cout<<"Your Balance is :: > "<<balance<<" Rupees";
+			break;}
+						else if (code!=123456789){
+									cout<<"Invalid Password :: "<<endl;
+cout<<"If you want to try again (Yes or No)  ::  > ";
+cin>>M;}
+}
+cout<<endl;
+			break;
+		case 4:
+	cout<<"           Exit         ";
+break;
+}
+		return 0;
+}
+	
